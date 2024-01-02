@@ -38,7 +38,7 @@ yLG         = 20.0               # Total width of specimen      [mm]
 yL1         = 3.75               # Width of inner part          [mm]
 zL          = 5.0                # Thickness of specimen        [mm]
 
-disp        = 2.5                # Displacement load            [mm]
+disp        = 10.                # Displacement load            [mm]
 
 pos1        = 5.                 # Position of Export point A   [mm]
 pos2        = 10.                # Position of Export point B   [mm]
