@@ -12,26 +12,26 @@ from job import *
 import numpy as np
 
 # User definition
-E  	= 210000. 	# Youngs modulus 		[Mpa] = [N/mm^2]
-nu	= 0.3 		# Poissons ratio 		[-]
-dens 	= 7.8e-3	# Density 			[t/mm^3]
-c 	= 2.0 		# Specific heat capacity 	[mJ/tK]
-alpha   = 1e-5		# Thermal expansion coeff.	[1/K]
-K0 	= 50.0e-2	# Thermal conductivity		[mW/mmK]
-thetaZ  = 293.0		# Reference temperature		[K]
-betaD 	= 1e3		# Damage penalty parameter	[1/Mpa]
-kappaD  = 5.0e1		# Damage threshold parameter    [Mpa]		
-etaD 	= 1.0e-3	# Damage evolution parameter	[1/Mpa]
-cD      = 1e-1		# Regularisation parameter 	[mm^2/Mpa]
-cP 	= 1e-2		# Damping parameter		[-]
+E  	    = 210000. 	# Youngs modulus 		       [Mpa] = [N/mm^2]
+nu	    = 0.3 		# Poissons ratio 		       [-]
+dens 	= 7.8e-3  	# Density 			           [t/mm^3]
+c 	    = 2.0 		# Specific heat capacity       [mJ/tK]
+alpha   = 1e-5		# Thermal expansion coeff.	   [1/K]
+K0 	    = 50.0e-2	# Thermal conductivity		   [mW/mmK]
+thetaZ  = 293.0		# Reference Temperature        [K]
+betaD 	= 1e3		# Damage penalty parameter	   [1/Mpa]
+kappaD  = 5.0e1		# Damage threshold parameter   [Mpa]		
+etaD 	= 1.0e-3	    # Damage evolution parameter	   [1/Mpa]
+cD      = 1e-1		# Regularisation parameter 	   [mm^2/Mpa]
+cP 	    = 1e-2		# Damping parameter		       [-]
 
 gamma 	= 1 		# Gradient damage switch
 
-time 	= 10.0		# Simulation time		[s]
-dtMax 	= 0.1		# Max. Time Step		[s]
-lc 	= 1.0		# Charact. element length	[mm]
+time 	= 10.0		# Simulation time		       [s]
+dtMax 	= 0.1		# Max. Time Step		           [s]
+lc 	    = 1.0		# Charact. element length	   [mm]
 
-disp 	= 1.0		# Displacement			[mm]
+disp 	= 1.0		# Displacement		           [mm]
 
 
 
