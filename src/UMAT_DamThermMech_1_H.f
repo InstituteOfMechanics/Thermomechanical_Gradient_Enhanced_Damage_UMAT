@@ -767,7 +767,6 @@
               
             ! Inelastic heat
             IH = (theta*DfdDd*DPsiMechDtheta-DfdDd*PsiMech)*ddot
-                  !+betaD*gamma*(phi-gamma*d)
               
               
             !---------------------------------------------------------
@@ -1708,7 +1707,6 @@
             DrIHDd = (theta*DDfdDDd*DPsiElaDtheta 
      &                - DDfdDDd*PsiEla)*ddot
      &                + rIH/dt
-                     !- betaD*gamma**(2.0d0)
             
 
             dRdTheta = (DrGJDtheta + DrIHDtheta + (DrGJDd + DrIHDd)*dddtheta)*dens
