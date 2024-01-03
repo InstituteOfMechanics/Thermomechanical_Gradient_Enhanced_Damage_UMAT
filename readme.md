@@ -11,3 +11,6 @@ The repository contains the following folders:
     src: A folder containing the source code necessary to build the model
     doc: A folder containing documentation for the models
     ref.bib: Latex bibliography file with reference(s) to the appropriate paper(s)
+
+---
+## References
