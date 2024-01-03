@@ -6,10 +6,8 @@ The implementation is provided by Lennart Sobisch (<lennart.sobisch@tu-dortmund.
 If you publish results based on any of these models, please cite the relevant paper.
 
 The repository contains the following folders:
-
-    - numerical_examples: A folder containing the source code for three numerical examples (one-element test, reduced section plate test, indentation test)
-    - src: A folder contatining the source code of the user material implementation, including a detailed user material.
-
+- `numerical_examples`: A folder containing the source code for three numerical examples (one-element test, reduced section plate test, indentation test)
+- `src`: A folder contatining the source code of the user material implementation, including a detailed user material.
 The implementation framework is a direct continuation of [^2]
 
 ---
