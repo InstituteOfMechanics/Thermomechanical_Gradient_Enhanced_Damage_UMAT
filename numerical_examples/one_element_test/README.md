@@ -6,4 +6,7 @@ Geometry, loading conditions and material parameters can be adoptet in *createEl
 The file *abaqus_v6.env* needs to be placed in the work directory in order to enable the fortran compiler option for cray pointers.
 
 Create the input file from the provided *python* script with:
-> AAA
+> abaqus cae noGui=createElementTest.py
+
+Start the Abaqus job with:
+> abaqus job=elementTest user=../../src/UMAT_DamThermMech_1_H.f -interactive
