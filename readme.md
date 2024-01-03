@@ -8,7 +8,8 @@ If you publish results based on any of these models, please cite the relevant pa
 The repository contains the following folders:
 - `numerical_examples`: A folder containing the source code for three numerical examples (one-element test, reduced section plate test, indentation test)
 - `src`: A folder contatining the source code of the user material implementation, including a detailed user material.
-The implementation framework is a direct continuation of [^2]
+
+The implementation framework is a direct continuation of [^2], where a user material implementation of two-field problems was proposed.
 
 ---
 ## References
