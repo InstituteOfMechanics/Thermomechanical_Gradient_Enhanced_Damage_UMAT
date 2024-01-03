@@ -3,4 +3,4 @@ An Abaqus framework based on user materials (Umat and Umatht) for multi-field pr
 
 A thermo-mechanically coupled gradient-enhanced damage model is implemented. The implementation framework can be adopted to several multi-field problems.
 
-The implementation is based on the publication **insert Doi**.
+The implementation is based on the publication **Doi pending**.
