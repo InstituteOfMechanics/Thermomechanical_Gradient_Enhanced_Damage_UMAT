@@ -2,3 +2,4 @@ The Routines `SMAAspUserArray.hdr`, `SMAAspUserSubroutines.hdr` and `SMAAspUserU
 in order to enable the allocatable arrays for the data transfer between the instances. 
 
 # User manual
+$$\boldsymbol{F}=\nabla_{\boldsymbol{X}}\boldsymbol{\varphi}$$
