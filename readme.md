@@ -11,10 +11,10 @@ The repository contains the following folders:
     doc: A folder containing documentation for the models
     ref.bib: Latex bibliography file with reference(s) to the appropriate paper(s)
 
-The implementation framework is a direct continuation of [^2]
+The implementation framework is a direct continuation of [^bignote]
 
 ---
 ## References
 [^1]: L. Sobisch, T. Kaiser, T. Furlan, A. Menzel, A user material approach for the solution of multi-field problems in Abaqus: Theoretical foundations, gradient-enhanced damage mechanics and thermo-mechanical coupling, Finite Elements in Analysis & Design ?? (2024) ??-??. doi:??.
-[^2]: R. Ostwald, E. Kuhl, A. Menzel, On the implementation of finite deformation gradient-enhanced damage models, Computational Mechanics 64 (847-
+[^bignote]: R. Ostwald, E. Kuhl, A. Menzel, On the implementation of finite deformation gradient-enhanced damage models, Computational Mechanics 64 (847-
 877) (2019). <doi:10.1007/s00466-019-01684-5>.
