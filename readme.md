@@ -7,9 +7,8 @@ If you publish results based on any of these models, please cite the relevant pa
 
 The repository contains the following folders:
 
-    src: A folder containing the source code necessary to build the model
-    doc: A folder containing documentation for the models
-    ref.bib: Latex bibliography file with reference(s) to the appropriate paper(s)
+    numerical_examples: A folder containing the source code for three numerical examples (one-element test, reduced section plate test, indentation test)
+    src: A folder contatining the source code of the user material implementation, including a detailed user material.
 
 The implementation framework is a direct continuation of [^2]
 
