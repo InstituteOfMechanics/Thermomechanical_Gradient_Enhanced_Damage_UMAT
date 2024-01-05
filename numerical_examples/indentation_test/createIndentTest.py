@@ -40,8 +40,8 @@ radius      = 8.                 # Radius of sphere             [mm]
 
 disp        = 2.5                # Displacement load            [mm]
 
-lcQuad      = 0.5                # char. Element length plate   [mm]
-lcSphere    = 0.25               # char. Element length sphere  [mm]          
+lcQuad      = 2.                 # char. Element length plate   [mm]
+lcSphere    = 1.5                # char. Element length sphere  [mm]          
 
 
 # ----------------------------------------------------------------------------
@@ -142,15 +142,15 @@ primaryMat = model.Material(name='primaryMaterial')
 primaryMat.Density(table=((dens, ), ))
 primaryMat.Depvar(n=13)
 primaryMat.UserMaterial(type=THERMOMECHANICAL, unsymm=ON,
-                        mechanicalConstants=(0,Emod,nu,capacity,alpha,K0,thetaZ,dens,betaD,etaD,kappaD,gamma,cd,cp),
-                        thermalConstants=(0,Emod,nu,capacity,alpha,K0,thetaZ,dens,betaD,etaD,kappaD,gamma,cd,cp))
+                        mechanicalConstants=(0,E,nu,capacity,alpha,K0,thetaZ,dens,betaD,etaD,kappaD,gamma,cD,cp),
+                        thermalConstants=(0,E,nu,capacity,alpha,K0,thetaZ,dens,betaD,etaD,kappaD,gamma,cD,cp))
 
 secondaryMat = model.Material(name='secondaryMaterial')
 secondaryMat.Density(table=((dens, ), ))
 secondaryMat.Depvar(n=13)
 secondaryMat.UserMaterial(type=THERMOMECHANICAL, unsymm=ON,
-                          mechanicalConstants=(1,Emod,nu,capacity,alpha,K0,thetaZ,1.,betaD,etaD,kappaD,gamma,cd,cp), 
-                          thermalConstants=(1,Emod,nu,capacity,alpha,K0,thetaZ,1.,betaD,etaD,kappaD,gamma,cd,cp))
+                          mechanicalConstants=(1,E,nu,capacity,alpha,K0,thetaZ,1.,betaD,etaD,kappaD,gamma,cD,cp), 
+                          thermalConstants=(1,E,nu,capacity,alpha,K0,thetaZ,1.,betaD,etaD,kappaD,gamma,cD,cp))
 
 
 model.HomogeneousSolidSection(name='sphereSection', material='sphereMaterial', thickness=None)
