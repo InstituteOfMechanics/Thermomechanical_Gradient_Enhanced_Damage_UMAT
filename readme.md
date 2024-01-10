@@ -3,7 +3,7 @@ This repository contains a user material implementation for Abaqus (`UMAT` and `
 A major benefit of the user material implementation (e.g. compared to a user element implementation) is the applicability of several integrated Abaqus features, such as contact algorithms, element formulations and solver structures. 
 
 The implementation is provided by Lennart Sobisch (<lennart.sobisch@tu-dortmund.de>) and is documented in the publication Sobisch et al. (2024).
-If you publish results based on any of these models, please cite the relevant paper.
+If you publish results based on this framework, please cite the relevant paper.
 
 The repository contains the following folders:
 - `numerical_examples`: A folder containing the source code for three numerical examples (one-element test, reduced section plate test, indentation test)
