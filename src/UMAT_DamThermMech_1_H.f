@@ -178,7 +178,7 @@
      &                TIME(2),PREDEF(1),DPRED(1),PROPS(NPROPS),COORDS(3)
         
 	        DOUBLE PRECISION, DIMENSION(3) :: y, Q
-            DOUBLE PRECISION, DIMENSION(3,3) :: F
+            DOUBLE PRECISION, DIMENSION(3,3) :: F, b
             DOUBLE PRECISION :: c, cond0, cD, cP, DU, dens, densT, detJ, DUDT, U
             INTEGER          :: elemForm,I
             
@@ -209,6 +209,7 @@
             F(3,2) = STATEV(12)
             F(3,3) = STATEV(13)
             CALL CALCDET33(F,detJ)
+	    b = MATMUL(F, TRANSPOSE(F))
             densT = dens/detJ
 
             !---------------------------------------------------------
@@ -228,7 +229,7 @@
                 DFDT = 0.0d0
 
 		! Push operation of heat flux vector
-		Q = MATMUL(DTEMDX, F)/detJ
+		Q = MATMUL(DTEMDX, b)/detJ
                 DO I=1, NTGRD
                     ! heat flux according to Fourier's law:
                     FLUX(I) = -cond0*Q(I)
@@ -252,7 +253,7 @@
                 DFDT = 0.0d0
                 
 		! Push operation of micromorphic flux
-		y = MATMUL(DTEMDX, F)/detJ              
+		y = MATMUL(DTEMDX, b)/detJ              
                 DO I=1, NTGRD
                     ! damage flux
                     FLUX(I) = - cD*y(I)
@@ -555,7 +556,7 @@
               ddot0 = ddot
               CALL KConstModel(F,Fn,Finv,phi,theta,matpars,STATEV,PNEWDT,ddot,dt,Y,rmech,P)
               
-              RPL = Y
+              RPL = Y/detJ
 
               ! Even though, there is a stress result for the local const
               ! model, the stresses will be set to zero for the slave
