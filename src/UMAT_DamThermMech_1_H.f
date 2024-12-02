@@ -888,7 +888,7 @@
                     
                     ! calculate Newton update
                     dLam = dLam - res/DRDLambda
-                    dk = dn + dLam/(-DfdDd)
+                    dk = dn + dLam
                     
                     ! Break-ou<t criterion
                     IF (abs(res) < 10.0d0**(-8.0d0)) EXIT
